@@ -158,6 +158,27 @@
 								
 								<p><a href="https://www.youtube.com/channel/UCWKMHxspJpKk7i2Y9lVupNA/featured">Youtube</a></li></p>
 								<p><a href="https://www.thingiverse.com/thenewstl/designs">Thingiverse</a></li></p>
+<div id="playground">
+
+<form>
+<p>to search type what you are looking for in here: <input id="keywords" size="24"></p>
+</form>
+
+
+</div>
+
+<script src="search.js"></script>
+<script>
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+    var myHilitor2 = new Hilitor("playground");
+    myHilitor2.setMatchType("left");
+    document.getElementById("keywords").addEventListener("keyup", function(e) {
+      myHilitor2.apply(this.value);
+    }, false);
+  }, false);
+
+</script>
 							
 							<ul class="copyright">
 								<li>&copy; Shard Code. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
